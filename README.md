@@ -11,9 +11,11 @@
 - Be happy.
 
 ## Options
+
 **Words per Minute**
 - `wpm="300"` will set the words per minute to 300
 - defining no wpm will default to 200
+
 **Styles**
 - `style="minimal"` will return just the number
 - `style="medium"` will return `X minute read`
