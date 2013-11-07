@@ -16,12 +16,19 @@
 - For example: `wpm="300"` will set the words per minute to 300
 - defining no wpm will default to 200
 
+**Format**
+-  `format="alpha"` will output an English sentence of the time (which can be further extended by the 'styles' parameter)
+- `format="numeric"` will an output a digital timer-esque string (4:30 read) 
+
 **Styles**
 - `style="minimal"` will return just the number
 - `style="medium"` will return `X min read`
 - `style="extended"` will return `X minute(s), X second(s)`
 - defining no style will default to `X minute(s)`
 
+**Custom**
+- Allows you to put in a custom string of text. Simply place a '#' wherever you want the time to be.
+- `custom="# minute read, you jabroni"` will return: '4:30 minute read, you jabroni'
 ## Notes
 - According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute) an average person reads prose text at 250 words per minute (wpm) on paper and at 180 wpm on screen, so I chose 200 as a default. See **Options** to change this setting.
 - The script is primarily intended for my personal use and is provided **"as is"**. I have no plans of making updates on a regular basis. There's no warranty expressed or implied. Use it at your own risk.
