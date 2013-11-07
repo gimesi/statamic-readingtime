@@ -1,5 +1,5 @@
 # Statamic ReadingTime
-"ReadingTime" is a [Statamic](http://www.statamic.com) plugin that displays the — [D'oh!](http://www.youtube.com/watch?v=g6GuEswXOXo) — estimated reading time of an article or page, e.g. `1 min read`, `6 minutes`, or just the number.
+"ReadingTime" is a [Statamic](http://www.statamic.com) plugin that displays the — [D'oh!](http://www.youtube.com/watch?v=g6GuEswXOXo) — estimated reading time of an article or page, e.g. `1 min read`, `6 minutes`, `4 minutes, 12 seconds`, or just the number.
 
 ## Installation
 - Download the zip file and unzip it (or clone the repo) into	`/_add-ons/`.
@@ -19,6 +19,7 @@
 **Styles**
 - `style="minimal"` will return just the number
 - `style="medium"` will return `X min read`
+- `style="extended"` will return `X minute(s), X second(s)`
 - defining no style will default to `X minute(s)`
 
 ## Notes

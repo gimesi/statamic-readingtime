@@ -20,12 +20,16 @@ class Plugin_readingtime extends Plugin {
 	$word = str_word_count($this->content);
 	
 	$minutes = round($word / $wpm);
+	$seconds = round($word % $wpm / ($wpm / 60));
 	
-    if ($style == "medium") {
-    	$time = $minutes . ' min read';
+	if ($style == "medium") {
+		$time = $minutes . ' min read';
 	}
 	elseif ($style == "minimal") {
 		$time = $minutes;
+	}
+	elseif ($style == "extended") {
+		$time = $minutes . ' minute' . ($minutes == 1 ? '' : 's') . ', ' . $seconds . ' second' . ($seconds == 1 ? '' : 's');
 	}
 	else {
 		$time = $minutes . ' minute' . ($minutes == 1 ? '' : 's');
