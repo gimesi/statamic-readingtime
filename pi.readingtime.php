@@ -12,15 +12,25 @@ class Plugin_readingtime extends Plugin {
     );
 
 	public function index() {
-	
-	$wpm = $this->fetch_param('wpm', 200, 'is_numeric');
 
+	$wpm = $this->fetch_param('wpm', 200, 'is_numeric');
+	$style = $this->fetch_param('style');
+	
 	$this->content = Parse::template($this->content, Statamic_View::$_dataStore, 'Statamic_View::callback');
 	$word = str_word_count($this->content);
 	
-	$minutes = floor($word / $wpm);
-	$time = $minutes . ' minute read';
+	$minutes = round($word / $wpm);
 	
+    if ($style == "medium") {
+    	$time = $minutes . ' min read';
+	}
+	elseif ($style == "minimal") {
+		$time = $minutes;
+	}
+	else {
+		$time = $minutes . ' minute' . ($minutes == 1 ? '' : 's');
+	}
+
 	return $time;   
 
 	}

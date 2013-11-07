@@ -10,6 +10,15 @@
 `{{ readingtime }} {{ content }} {{ /readingtime }}`
 - Be happy.
 
+## Options
+**Words per Minute**
+- `wpm="300"` will set the words per minute to 300
+- defining no wpm will default to 200
+**Styles**
+- `style="minimal"` will return just the number
+- `style="medium"` will return `X minute read`
+- defining no style will default to `X minute(s)`
+
 ## Notes
 - According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute) an average person reads prose text at 250 words per minute (wpm) on paper and at 180 wpm on screen, so I chose 200. Change the variable `$wpm` in line 14 if you see the need to.
 - The script is primarily intended for my personal use and is provided **"as is"**. I have no plans of making updates on a regular basis. There's no warranty expressed or implied. Use it at your own risk.
