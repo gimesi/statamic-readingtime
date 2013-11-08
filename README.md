@@ -29,6 +29,7 @@
 **Custom**
 - Allows you to put in a custom string of text. Simply place a '#' wherever you want the time to be.
 - `custom="# minute read, you jabroni"` will return: '4:30 minute read, you jabroni'
+
 ## Notes
 - According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute) an average person reads prose text at 250 words per minute (wpm) on paper and at 180 wpm on screen, so I chose 200 as a default. See **Options** to change this setting.
 - The script is primarily intended for my personal use and is provided **"as is"**. I have no plans of making updates on a regular basis. There's no warranty expressed or implied. Use it at your own risk.
