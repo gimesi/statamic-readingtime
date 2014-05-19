@@ -4,7 +4,7 @@ class Plugin_readingtime extends Plugin {
 
     var $meta = array(
             'name'               => 'ReadingTime',
-            'version'            => '0.2',
+            'version'            => '0.3',
             'author'             => 'Thomas Gimesi',
             'author_url'         => 'http://gimesi.com',
             'contributor'        => 'Nick Snyder',
@@ -19,7 +19,7 @@ class Plugin_readingtime extends Plugin {
 
 		$this->content = $this->fetchParam('content', null , false, false, false);
 		$word = str_word_count($this->content);
-		
+
 		$minutes = round($word / $wpm);
 		$seconds = round($word % $wpm / ($wpm / 60));
 
