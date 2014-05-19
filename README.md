@@ -7,7 +7,7 @@
 
 ## How to use it
 - Insert following code in your template file where you want to display the estimated time:
-`{{ readingtime }} {{ content }} {{ /readingtime }}`
+`{{ readingtime content="{ content }" }}`
 - Be happy.
 
 ## Options
