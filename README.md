@@ -1,5 +1,5 @@
 # DEPRECATED – Statamic ReadingTime
-Statamic has a similar function incorporated in its core. [Check the docs](https://docs.statamic.com/modifiers/read_time) to see how to use it! 
+Statamic has a similar function incorporated in its core since 2018. [Check the docs](https://docs.statamic.com/modifiers/read_time) to see how to use it! 
 
 ---
 
